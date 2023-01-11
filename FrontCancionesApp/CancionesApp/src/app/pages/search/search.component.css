@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    border: rgb(2, 2, 2) 1px solid;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+button {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    width: 100px;
+    height: 30px;
+}
+
+#title{
+    font-size: 1.75rem;
+    color: #6592bf;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,18 @@
+a:hover {
+    background-color: rgb(111, 36, 134);
+    transition: background-color .5s;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    overflow: visible;
+    bottom: 0;
+    position: fixed;
+}
+
+#form5Example2 {
+    width: 60%;
+    margin: 0 auto;
+}

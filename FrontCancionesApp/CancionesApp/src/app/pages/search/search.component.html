@@ -1,0 +1,26 @@
+<div>
+    <h3 id="title" > Busca tu artista favorito </h3>
+    <input type="text" [(ngModel)]="bandName" name="bandName" placeholder="Busca tu banda favorita">
+    <button (click)="search()"> Buscar </button>
+    <br>
+    <br>
+    <table *ngIf="datos.length > 0">
+        <thead>
+            <tr>
+                <th>Cancion</th>
+                <th>Album</th>
+                <th>Url preview</th>
+                <th>Precio</th>
+                <th>Fecha de lanzamiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of datos">
+                <td>{{song.trackName}}</td>
+                <td>{{song.collectionName}}</td>
+                <td><a href="{{song.previewUrl}}">Preview</a></td>
+                <td>{{song.trackPrice | currency}}</td>
+                <td>{{song.releaseDate | date: 'dd/MM/yyyy'}}</td>
+            </tr>
+    </table>
+</div>
